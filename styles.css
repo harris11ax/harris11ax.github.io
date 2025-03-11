@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar, .workspace, .output {
+    padding: 10px;
+  }
+  
+  .sidebar {
+    width: 20%;
+    border-right: 1px solid #ccc;
+  }
+  
+  .workspace {
+    width: 50%;
+    border-right: 1px solid #ccc;
+  }
+  
+  .output {
+    width: 30%;
+  }
+  
+  .component {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e0e0e0;
+    cursor: grab;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    height: 500px;
+    border: 1px solid #ccc;
+  }
+  
+  #simplify-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #simplify-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #step-explanation, #result {
+    margin-top: 20px;
+  }

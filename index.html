@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thevenin Equivalent Circuit Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar for components -->
+    <div class="sidebar">
+      <h2>Components</h2>
+      <div class="component" data-type="resistor">Resistor</div>
+      <div class="component" data-type="voltage-source">Voltage Source</div>
+      <div class="component" data-type="current-source">Current Source</div>
+      <div class="component" data-type="ground">Ground</div>
+      <div class="component" data-type="load">Load</div>
+    </div>
+
+    <!-- Workspace for circuit -->
+    <div class="workspace">
+      <h2>Workspace</h2>
+      <div class="grid"></div>
+    </div>
+
+    <!-- Output section -->
+    <div class="output">
+      <h2>Output</h2>
+      <button id="simplify-button">Simplify</button>
+      <div id="step-explanation"></div>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
